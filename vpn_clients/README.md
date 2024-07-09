@@ -1,9 +1,3 @@
-<div align="center">
-  <img src="https://docs.google.com/uc?id=0Bxvjs69iPCB9OEp6RXUtTjNmT2c" height="182" width="476.5"><br><br>
-</div>
-
-# VPN Mesfix
-
 This project is in charge of deploy a VPN service inside a docker container
 
 ## Requirements
