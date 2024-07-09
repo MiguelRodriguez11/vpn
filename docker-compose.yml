@@ -1,0 +1,19 @@
+version: '1'
+networks:
+    open-vpn:
+      external: true
+services:
+  # openvpn
+  open-vpn:
+    restart: always
+    image: kylemanna/openvpn
+    container_name: open-vpn
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "1194:1194/udp"
+    volumes:
+      - /var/data/open-vpn:/etc/openvpn
+    networks:
+      - open-vpn
+      
